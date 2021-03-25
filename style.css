@@ -1,14 +1,14 @@
 
 body
 {
-  background-color: #E8B1FF;
+  background-image: url("woodBackground.png");
 }
 .jumbotron
 {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   padding-left: 33%;
-  background-image: url(Flowers-5.jpg);
+  background-image: url("jumboTronNew.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -21,7 +21,7 @@ body
 /* Navbar Begining */
 nav
 {
-  background-color: #C58C67;
+  background-image: url("NavBack.jpg");
   padding: 1%;
 }
 .nav-link
@@ -90,13 +90,13 @@ section
 }
 .odd
 {
-  background-color: #361F00;
+  background-color: #fffff7;
   color: #6E4728;
 }
 .even
 {
   color: #361F00;
-  background-color: #6E4728;
+  background-color: #e1d3c4;
 }
 /* Main Content End */
 
@@ -154,6 +154,95 @@ td img
 {
   width: 25%;
 }
+.itemsDisp
+{
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left: 60px;
+}
+.card
+{
+    margin: 10px;
+    box-shadow: 0 0 0.5em black;
+}
+.searchAndFilters
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #fffff7;
+    width: 100%;
+}
+.searchBar
+{
+  margin-top: 40px;
+  width: 500px;
+  margin-left:10px;
+  margin-right: 10px;
+}
+.searchButton
+{
+    margin-top: 40px;
+    margin-left:10px;
+    margin-right: 100px;
+}
+.filter
+{
+  padding: 0px;
+}
+.searchAndFilterItem
+{
+  margin:10px;
+}
+.itemImage
+{
+  float: none;
+  width: 50%;
+  height: 50%;
+  border-style: solid;
+  border-width: thick;
+}
+.itemDispdiv
+{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.itemPrice
+{
+  margin-left: 20px;
+  text-align: left;
+  font-size: 40px;
+}
+.itemTitle
+{
+  margin-left: 20px;
+  text-align: left;
+}
+.itemTextDiv
+{
+  max-width: 50%;
+}
+.itemDesc
+{
+  margin-left: 20px;
+  text-align: left;
+}
+.left
+{
+  float: left;
+}
+.lineTxt
+{
+  font-size: 150%;
+}
+.lineInput
+{
+  width: 80%;
+}
+form textarea
+{
+  width: 90%;
+
+}
 
 /* Page Specfic End */
 
@@ -164,7 +253,7 @@ footer
   position: fixed;
   bottom: 0;
   text-align: center;
-  background-color: #C58C67;
+  background-image: url("NavBack.jpg");
   padding-top: 0.5%;
   padding-bottom: 0.5%;
   margin: 0;

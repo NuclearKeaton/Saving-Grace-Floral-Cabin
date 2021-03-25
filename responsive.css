@@ -26,7 +26,6 @@
 		right: -19.1%;
 		width: 19%;
 	}
-
 }
 @media screen and (max-width: 1199px)
 {
@@ -63,7 +62,11 @@
 	{
 		display: none;
 	}
-
+	.itemImage
+	{
+	  width: 50%;
+	  height: 50%;
+	}
 }
 
 @media screen and (max-width: 767px)

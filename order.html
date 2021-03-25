@@ -25,7 +25,7 @@
 
       <!-- Logo Begining -->
       <header class = "jumbotron jumbotron-fluid">
-        <img src="Logo.jpg" alt="Logo" class="Logo">
+        <img src="logoNew.png" alt="Logo" class="Logo">
       </header>
       <!-- Logo End -->
 
@@ -52,7 +52,7 @@
               <span class="navbar-text">|</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
+              <a class="nav-link" href="shop.php">Shop</a>
             </li>
             <li class="nav-item">
               <span class="navbar-text">|</span>
@@ -80,12 +80,21 @@
       <!-- Content Begining -->
       <section>
         <div class="odd">
-          <h3>Expertly Designed Floral Arrangements</h3>
-          <p>Saving Grace Floral Cabin's floral arrangements are all lovingly created with top professional standards in mind. With our top tier florist on staff with 8 years of experience we are certain to make an arrangement for any occasion that will blow you away.</p>
+              <h2>Please fill out the form below with your request.</h2>
+              <p>We'll get back to you with a quote as soon as we can.</p>
+              <p>Thank you, and have a blessed day!</p>
         </div>
         <div class="even">
-          <h3>Let us deliver to you!</h3>
-          <p>Saving Grace Floral Cabin delivers to a number of locations throughout Arkansas including Ash Flat, Cherokee Village, Highland, Oxford, Horse Shoe Bend, Viola, Elizabeth, Gepp, Henderson, Calico Rock, Bexar, Brockwell, Salem, Glencoe, Morriston, Camp, and Fryatt. We also deliver to a number of cities in Missouri including Union, Salem, Agnes, and Glencoe.</p>
+          <form action="mailto:jaci.seeley@gmail.com" method="post" enctype="text/plain">
+              <span class="left lineTxt">Name: &ensp;</span>
+              <input class="left lineInput" type="text" name="name"><br><br>
+              <span class="left lineTxt">E-mail: &nbsp;</span>
+              <input class="left lineInput" type="text" name="mail"><br><br>
+              <span class="left lineTxt">Comment:</span><br>
+              <textarea rows="5" cols="20" name="comments"></textarea><br />
+              <input type="submit" value="Send">
+              <input type="reset" value="Reset">
+          </form>
         </div>
       </section>
       <!-- Content End -->

@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="responsive.css">
     <!-- Our Stylesheets End -->
 
+    <!-- our JS start -->
+		<script type="text/javascript" src="itemUpdates.js"></script>
+		<!-- our JS end -->
   </head>
   <body>
 
@@ -58,7 +61,7 @@
               <span class="navbar-text">|</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link current" href="FAQ.html">FAQ</a>
+              <a class="nav-link" href="FAQ.html">FAQ</a>
             </li>
             <li class="nav-item">
               <span class="navbar-text">|</span>
@@ -80,12 +83,14 @@
       <!-- Content Begining -->
       <section>
         <div class="odd">
-          <h3>Expertly Designed Floral Arrangements</h3>
-          <p>Saving Grace Floral Cabin's floral arrangements are all lovingly created with top professional standards in mind. With our top tier florist on staff with 8 years of experience we are certain to make an arrangement for any occasion that will blow you away.</p>
-        </div>
-        <div class="even">
-          <h3>Let us deliver to you!</h3>
-          <p>Saving Grace Floral Cabin delivers to a number of locations throughout Arkansas including Ash Flat, Cherokee Village, Highland, Oxford, Horse Shoe Bend, Viola, Elizabeth, Gepp, Henderson, Calico Rock, Bexar, Brockwell, Salem, Glencoe, Morriston, Camp, and Fryatt. We also deliver to a number of cities in Missouri including Union, Salem, Agnes, and Glencoe.</p>
+          <div class = "itemDispdiv">
+            <img class = "itemImage" src = "Flowers-5.jpg" alt = "item">
+            <div class = "itemTextDiv">
+              <h1 class = "itemTitle" id = "title"></h1>
+              <p class = "itemPrice" id = "price"></p>
+              <p class = "itemDesc" id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Content End -->
@@ -97,6 +102,8 @@
       <p> &copy;2021 Saving Grace Floral Cabin. Email us at: <a href="mailto:designsbymollyjo2020@gmail.com">designsbymollyjo2020@gmail.com</a> and Check out our <a href="https://www.facebook.com/floralcabin/" target="_blank">Facebook!</a></p>
     </footer>
     <!-- Footer End -->
-
+    <script>
+      updateItemPage();
+    </script>
   </body>
 </html>
