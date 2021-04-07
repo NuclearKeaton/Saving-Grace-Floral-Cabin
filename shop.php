@@ -185,11 +185,122 @@
 					button.id = j;
 					button.onclick = function(){passItem(this.id)};
 					buttons.push(button);
+
+					//PayPal button creation Begining
+					var paypalButton = document.createElement("form");
+					paypalButton.target = "paypal";
+					paypalButton.action = "https://www.paypal.com/cgi-bin/webscr";
+					paypalButton.method = "post";
+
+					var cmd = document.createElement('input')
+					cmd.type = "hidden";
+					cmd.name = "cmd";
+					cmd.value = "_cart";
+
+					var business = document.createElement('input')
+					business.type = "hidden";
+					business.name = "business";
+					business.value = "Meganuke5000@gmail.com";
+
+					var lc = document.createElement('input')
+					lc.type = "hidden";
+					lc.name = "lc";
+					lc.value = "en_US";
+
+					var item_name = document.createElement('input')
+					item_name.type = "hidden";
+					item_name.name = "item_name";
+					item_name.value = items[i];
+
+					var amount = document.createElement('input')
+					amount.type = "hidden";
+					amount.name = "amount";
+					amount.value = items[i+1];
+
+					var currency_code = document.createElement('input')
+					currency_code.type = "hidden";
+					currency_code.name = "currency_code";
+					currency_code.value = "USD";
+
+					var button_subtype = document.createElement('input')
+					button_subtype.type = "hidden";
+					button_subtype.name = "button_subtype";
+					button_subtype.value = "products";
+
+					var no_note = document.createElement('input')
+					no_note.type = "hidden";
+					no_note.name = "no_note";
+					no_note.value = "0";
+
+					var tax_rate = document.createElement('input')
+					tax_rate.type = "hidden";
+					tax_rate.name = "tax_rate";
+					tax_rate.value = "6.500";
+
+					var shipping = document.createElement('input')
+					shipping.type = "hidden";
+					shipping.name = "shipping";
+					shipping.value = "0.00";
+
+					var add = document.createElement('input')
+					add.type = "hidden";
+					add.name = "add";
+					add.value = "1";
+
+					var bn = document.createElement('input')
+					bn.type = "hidden";
+					bn.name = "bn";
+					bn.value = "PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest";
+
+
+					//********************************************************************************************************************************************
+					//********************************************************************************************************************************************
+					//CHANGE THIS PIECE BEFORE CONSIDERING COMPLETED *********************************************************************************************
+					var shopping_url = document.createElement('input')
+					shopping_url.type = "hidden";
+					shopping_url.name = "shopping_url";
+					shopping_url.value = "http://localhost/Website/shop.php";
+					//********************************************************************************************************************************************
+					//********************************************************************************************************************************************
+					//********************************************************************************************************************************************
+
+
+					var submit = document.createElement('input')
+					submit.type = "image";
+					submit.src = "https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif";
+					submit.border = "0";
+					submit.name = "submit";
+					submit.alt = "PayPal - The safer, easier way to pay online!";
+
+					var pic = document.createElement('image')
+					pic.alt = "";
+					pic.src = "https://www.paypalobjects.com/en_US/i/scr/pixel.gif";
+					pic.width = "1";
+					pic.height = "1";
+
+					paypalButton.appendChild(cmd);
+					paypalButton.appendChild(business);
+					paypalButton.appendChild(lc);
+					paypalButton.appendChild(item_name);
+					paypalButton.appendChild(amount);
+					paypalButton.appendChild(currency_code);
+					paypalButton.appendChild(button_subtype);
+					paypalButton.appendChild(no_note);
+					paypalButton.appendChild(tax_rate);
+					paypalButton.appendChild(shipping);
+					paypalButton.appendChild(add);
+					paypalButton.appendChild(bn);
+					paypalButton.appendChild(shopping_url);
+					paypalButton.appendChild(submit);
+					paypalButton.appendChild(pic);
+					//PayPal button creation End
+
 					cardBody.appendChild(title);
 					cardBody.appendChild(price);
 					cardBody.appendChild(button);
 					cardBase.appendChild(image);
 					cardBase.appendChild(cardBody);
+					cardBase.appendChild(paypalButton);
 					cont.appendChild(cardBase);
 					j++;
 				}
